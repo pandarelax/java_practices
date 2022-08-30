@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double pricePerKM = 2.20, minimumPrice = 20.0, openingPrice = 10.0, finalPrice;
+        int KM;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Gideceginiz mesafeyi KM cinsinden giriniz : ");
+        KM = input.nextInt();
+        finalPrice = Math.max((KM * pricePerKM), minimumPrice);
+
+        System.out.println("Acilis tutari : " + openingPrice);
+        System.out.println("Minimum tutar : " + minimumPrice);
+        System.out.println("Odenecek tutar : " + finalPrice);
+    }
+}
